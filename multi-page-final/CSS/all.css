@@ -1,0 +1,743 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+v2.0 | 20110126
+License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin        : 0;
+  padding       : 0;
+  border        : 0;
+  font-size     : 100%;
+  font          : inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing : 0;
+}
+
+img {
+  max-width: 100%;
+  height   : auto;
+}
+
+/*home*/
+.wrap {
+  margin        : 0 auto;
+  font-family   : "noto sans tc", "noto serif tc";
+  line-height   : 1.5;
+  color         : #4a4a4a;
+  font-size     : 17px;
+  letter-spacing: 0.3px;
+  width         : 1024px;
+}
+
+.nav-all {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+  background     : rgba(255, 255, 230, 0.1);
+}
+
+.nav-all>h1>a {
+  background : url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/logo.png);
+  display    : block;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow   : hidden;
+  height     : 36px;
+  width      : 182px;
+  margin-left: 40px;
+}
+
+.navigation {
+  display        : flex;
+  justify-content: space-between;
+  margin-right   : 40px;
+}
+
+.navigation>li {
+  padding: 0px 20px;
+}
+
+.navigation>li>a {
+  color          : white;
+  display        : block;
+  padding        : 25px 5px;
+  text-decoration: none;
+  border-bottom  : 3px transparent;
+}
+
+.navigation>li>a:hover {
+  color        : #00cc99;
+  border-bottom: 3px solid #00cc99;
+  padding      : 22px 5px 25px;
+}
+
+.banner-home {
+  background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_index.png) no-repeat 100%;
+  height    : 560px;
+  margin    : 0 auto;
+  position  : relative;
+}
+
+.banner-words {
+  position      : absolute;
+  top           : 30%;
+  margin-left   : 40px;
+  letter-spacing: 2.5px;
+}
+
+.banner-words a {
+  text-decoration : none;
+  color           : white;
+  background-color: #00cc99;
+  font-size       : 20px;
+  padding         : 10px 20px 10px 30px;
+  border-radius   : 5px;
+}
+
+.banner-words a:hover {
+  background-color: rgb(30, 216, 170);
+}
+
+.banner-words h2 {
+  color: #00cc99;
+}
+
+.banner-words h2 {
+  font-size    : 42px;
+  margin-bottom: 50px;
+}
+
+.banner-words h2 span {
+  color: white;
+}
+
+.course,
+.difference {
+  padding: 50px 40px 0;
+}
+
+.course-title {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : flex-end;
+  margin-bottom  : 30px;
+}
+
+.course-title h3 {
+  font-size: 36px;
+  color    : #00cc99;
+}
+
+.subtitle {
+  color      : #9b9b9b;
+  font-size  : 20px;
+  margin-left: 20px;
+}
+
+.course-title a {
+  display        : block;
+  text-decoration: none;
+  color          : #00cc99;
+  border         : 2px solid #00cc99;
+  padding        : 0px 10px;
+  border-radius  : 5px;
+}
+
+.course-title a:hover {
+  color           : white;
+  background-color: #00cc99;
+}
+
+.course-ul {
+  display        : flex;
+  justify-content: space-between;
+}
+
+.course-item {
+  width     : 32%;
+  text-align: center;
+}
+
+.course-item a {
+  display        : block;
+  text-decoration: none;
+  color          : #323223;
+  padding        : 30px 20px;
+  box-sizing     : border-box;
+  height         : 100%;
+  box-shadow     : 0px 3px 5px 1px rgba(0, 0, 0, 0.3);
+}
+
+.course-item a:hover {
+  box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.45);
+}
+
+.description {
+  margin      : 0 10px;
+  text-align  : justify;
+  text-justify: inter-ideograph;
+}
+
+.description h4 {
+  font-size : 22px;
+  margin    : 5px auto;
+  text-align: center;
+}
+
+.description p {
+  color: #9b9b9b;
+}
+
+.difference table {
+  margin     : 0 auto;
+  font-weight: 500;
+}
+
+.difference table tr {
+  border-bottom: 1px solid #ebebeb;
+}
+
+.items {
+  background-color: #ebebeb;
+}
+
+.difference table th,
+.difference table td {
+  padding   : 15px 62px;
+  text-align: center;
+}
+
+.green {
+  color: #00cc99;
+}
+
+.home-form {
+  background-color: #ebebeb;
+  display         : flex;
+  justify-content : space-between;
+  align-items     : center;
+  padding         : 30px 40px;
+  margin-top      : 50px;
+}
+
+.form-words {
+  color         : #323223;
+  font-size     : 32px;
+  letter-spacing: 1.5px;
+}
+
+.message {
+  display       : flex;
+  flex-direction: column;
+  align-items   : flex-end;
+  width         : 40%;
+  margin-top    : 120px;
+}
+
+.message input {
+  font-size    : 18px;
+  padding      : 12px 10px;
+  width        : 100%;
+  border-radius: 5px;
+  border       : none;
+  margin-bottom: 20px;
+  box-sizing   : border-box;
+}
+
+.message input:hover {
+  box-shadow: inset 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.message .submit {
+  width           : 30%;
+  background-color: #00cc99;
+  color           : white;
+  letter-spacing  : 10px;
+  padding         : 12px 0px 12px 14px;
+}
+
+.message .submit:hover {
+  cursor          : pointer;
+  background-color: rgb(30, 216, 170);
+  border          : none;
+  box-shadow      : none;
+}
+
+
+footer {
+  padding         : 30px 40px;
+  display         : flex;
+  justify-content : space-between;
+  background-color: #323228;
+}
+
+h5 a {
+  background : url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/logo.png);
+  display    : block;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow   : hidden;
+  height     : 36px;
+  width      : 182px;
+}
+
+h5 p {
+  color        : #9b9b9b;
+  text-align   : right;
+  padding-right: 4px;
+}
+
+.social-media {
+  display   : flex;
+  align-self: center;
+}
+
+.social-media img {
+  padding-left: 10px;
+}
+
+/*course*/
+.banner-course {
+  margin    : 0 auto;
+  background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_course.png) no-repeat;
+  height    : 560px;
+  margin    : 0 auto;
+}
+
+.banner-course-content {
+  margin         : 30px 40px 0;
+  letter-spacing : 2.5px;
+  display        : flex;
+  justify-content: space-between;
+}
+
+.banner-course-words {
+  margin-top: 60px;
+}
+
+.banner-course-words h2 {
+  color    : white;
+  font-size: 48px;
+}
+
+.banner-course-words p {
+  color        : #00cc99;
+  font-size    : 23px;
+  margin-bottom: 50px;
+}
+
+.banner-course-words a {
+  text-decoration : none;
+  color           : white;
+  background-color: #00cc99;
+  font-size       : 20px;
+  padding         : 10px 20px 10px 30px;
+  border-radius   : 5px;
+}
+
+.banner-course-words a:hover {
+  background-color: rgb(30, 216, 170);
+}
+
+.banner-logo {
+  width     : 250px;
+  text-align: center;
+}
+
+.content {
+  width : 650px;
+  margin: 50px auto;
+}
+
+.intro,
+.special,
+.syllabus {
+  margin-top: 50px;
+}
+
+.intro {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+}
+
+.picture {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : center;
+}
+
+.teacher h3 {
+  font-size  : 36px;
+  color      : #00cc99;
+  margin-left: 40px;
+}
+
+.teacher span {
+  font-size  : 36px;
+  margin-left: 40px;
+}
+
+.intro ul li {
+  padding-left   : 20px;
+  list-style-type: disc;
+  color          : #999999;
+}
+
+.special h3,
+.syllabus h3 {
+  font-size    : 36px;
+  color        : #00cc99;
+  margin-bottom: 10px;
+}
+
+.special span,
+.syllabus span {
+  color      : #999999;
+  font-size  : 20px;
+  margin-left: 10px;
+}
+
+.special ul li {
+  list-style-type    : decimal;
+  list-style-position: inside;
+}
+
+.special li span {
+  font-size   : 16px;
+  margin-left : 6px;
+  color       : #4a4a4a;
+  text-align  : justify;
+  text-justify: inter-ideograph;
+}
+
+.syllabus table {
+  width         : 650px;
+  text-align    : left;
+  font-size     : 16px;
+  letter-spacing: 0.8px;
+  color         : #999999;
+}
+
+.syllabus th {
+  background-color: #ebebeb;
+  font-weight     : 500;
+  color           : #4a4a4a;
+}
+
+.syllabus th,
+.syllabus td {
+  padding: 15px 0 15px 30px;
+}
+
+.enroll {
+  background-color: #ebebeb;
+  padding         : 90px 0;
+  line-height     : 1.7;
+}
+
+.enroll-wrap {
+  display        : flex;
+  justify-content: space-between;
+  align-items    : flex-end;
+  width          : 650px;
+  margin         : 0 auto;
+  font-size      : 28px;
+}
+
+.enroll a {
+  display         : block;
+  text-decoration : none;
+  color           : white;
+  background-color: #00cc99;
+  font-size       : 20px;
+  padding         : 10px 20px 10px 30px;
+  border-radius   : 5px;
+}
+
+.enroll a:hover {
+  background-color: rgb(30, 216, 170);
+}
+
+/*QA*/
+.banner-qa {
+  margin    : 0 auto;
+  background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/mutiplePage/bg_QA.png) no-repeat;
+  height    : 560px;
+}
+
+.banner-qa-content {
+  text-align: center;
+  margin    : 90px auto 45px;
+  width     : 500px;
+}
+
+.banner-qa-content h2 {
+  font-size: 40px;
+  color    : white;
+}
+
+.banner-qa-content p {
+  color        : #00cc99;
+  font-size    : 16px;
+  margin-bottom: 30px;
+}
+
+.search {
+  display        : flex;
+  justify-content: center;
+  position       : relative;
+  overflow       : hidden;
+}
+
+.search-bar {
+  font-size    : 18px;
+  padding      : 10px;
+  width        : 100%;
+  height       : 100%;
+  border-radius: 5px;
+  border       : none;
+}
+
+.search-bar:hover {
+  box-shadow: inset 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.search-btn {
+  height          : 90%;
+  border-radius   : 5px;
+  background-color: #fff;
+  border          : none;
+  position        : absolute;
+  right           : 1px;
+  top             : 2px;
+  cursor          : pointer;
+}
+
+.search-btn img {
+  height: 60%;
+}
+
+.frequent-questions,
+.payment,
+.refund {
+  margin : 50px auto 0;
+  padding: 0 150px;
+}
+
+.title h3 {
+  color    : #00cc99;
+  font-size: 32px;
+}
+
+.title h3 span {
+  color      : #999999;
+  font-size  : 18px;
+  margin-left: 20px;
+}
+
+.title,
+.qa {
+  margin-bottom: 30px;
+}
+
+.ans,
+.process ul {
+  color    : #999999;
+  font-size: 16px;
+}
+
+.ans span {
+  color: #00cc99;
+}
+
+.payment li,
+.refund li {
+  list-style  : decimal;
+  padding-left: 20px;
+  margin-left : 60px;
+}
+
+.process li {
+  list-style: disc;
+}
+
+.enroll {
+  margin-top      : 50px;
+  background-color: #ebebeb;
+  padding         : 90px 0;
+  line-height     : 1.7;
+  display         : flex;
+  justify-content : space-around;
+}
+
+.enroll h4 {
+  font-size: 28px;
+}
+
+.message {
+  display       : flex;
+  flex-direction: column;
+  align-items   : flex-end;
+  width         : 45%;
+}
+
+.message input {
+  font-size    : 18px;
+  padding      : 10px;
+  width        : 100%;
+  border-radius: 5px;
+  border       : none;
+  margin       : 10px 0;
+  box-sizing   : border-box;
+}
+
+.message textarea {
+  width        : 100%;
+  border-radius: 5px;
+  border       : none;
+  margin       : 10px 0;
+  font-size    : 18px;
+  padding      : 10px;
+  box-sizing   : border-box;
+}
+
+.message input:hover,
+.message textarea:hover {
+  box-shadow: inset 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.message .submit {
+  width           : 30%;
+  background-color: #00cc99;
+  color           : white;
+  letter-spacing  : 10px;
+  padding         : 12px 0px 12px 14px;
+}
+
+.message .submit:hover {
+  cursor          : pointer;
+  background-color: rgb(30, 216, 170);
+  border          : none;
+  box-shadow      : none;
+}
